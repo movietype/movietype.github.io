@@ -1,0 +1,175 @@
+/* ===== Style Sheet ===== */
+/* ===== Style Sheet ===== */
+/* ===== Style Sheet ===== */
+
+/* ===== CSS RESET ===== */
+/* ===== CSS RESET ===== */
+/* ===== CSS RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: ,sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #56373E;
+}
+p{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+/* ====== //// Top Space \\\\ ====== */
+/* ====== //// Top Space \\\\ ====== */
+/* ====== //// Top Space \\\\ ====== */
+/* ====== //// Top Space \\\\ ====== */
+.top-space{
+    font-size: 12px;
+    margin: 2rem;
+    padding: 1rem;
+}
+.top-space p{
+    padding: 1rem 0 0 0;
+    color: #DD8D9E;
+    overflow: hidden;
+    border-right: .12em solid #DDD661;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .1em;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #DDD661; }
+}
+/* ====== //// Paper CSS \\\\ ====== */
+/* ====== //// Paper CSS \\\\ ====== */
+/* ====== //// Paper CSS \\\\ ====== */
+/* ====== //// Paper CSS \\\\ ====== */
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-md-4{
+    margin: 0 auto;
+    padding: 0;
+}
+.paper-fold{
+    position: relative;
+    background-color: white;
+    border-color: #e44d6e;
+    width: 300px;
+    height: 80vh;
+    padding: 1rem;
+    margin: 1rem;
+    transition: 1s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+.paper-fold:hover{
+    transform: translateY(10px);
+}
+.paper-fold.active{
+    transform: translateY(5px);
+}
+.paper-fold:hover div a.button{
+    width:auto;
+    font-size: 0.8rem;
+    background-color: #29426d;
+    box-shadow: none;
+}
+.paper-fold.active div a.button{
+    width:auto;
+    font-size: 0.8rem;
+    background-color: #29426d;
+    box-shadow: none;
+}
+.paper-fold a img{
+    display: block;
+    margin: 0 auto;
+    text-align: none;
+    font-size: none;
+    text-decoration: none;
+    color:none;
+    transition: none;
+}
+a.image:hover{
+    color:none;
+    border-bottom:none;
+    text-align: none;
+    box-shadow: none;
+    transform: none;
+}
+.paper-fold h2{
+    flex: 1;
+    font-size: .65rem;
+    color: #A0A6AB;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.paper-fold h1{
+    flex: 1;
+    color: #29426d;
+    font-family: 'Abril Fatface', cursive;
+    display: flex;
+    justify-content: center;
+    margin:1rem 0 1rem 0;
+    letter-spacing: .05em;
+    transition: 0.5s ease;
+}
+.paper-fold h1:hover{
+    transform: translateX(2px);
+}
+.paper-fold p{
+    flex: 1;
+    padding: 1rem 1rem;
+    margin: 0 0 4rem 0;
+    color:#333333;
+    font-size: 14px;
+    line-height: 2.5rem;
+}
+.paper-fold .button-more{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 25px;
+    letter-spacing: 0.2rem;
+    border-radius: 0;
+    border-color: #e44d6e;
+    color: white;
+    background: #e44d6e;
+    padding: 0.5rem 1rem;
+    transition: 1s ease;
+}
+.paper-fold .button-more:hover{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    color: #2781A3;
+    border-color: #2781A3;
+}
+/* ====== //// Bottom Space \\\\ ====== */
+/* ====== //// Bottom Space \\\\ ====== */
+/* ====== //// Bottom Space \\\\ ====== */
+/* ====== //// Bottom Space \\\\ ====== */
